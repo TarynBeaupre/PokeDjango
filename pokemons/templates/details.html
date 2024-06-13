@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}
+Details about {{ pokemon.name }}
+{% endblock %}
+
+{% block content %}
+<h1>Pokemon Details</h1>
+    <h1>Name: {{ pokemon.name }}</h1>
+    <h3>Pokedex #: {{ pokemon.id }}</h3>
+    <p>Classification: {{ pokemon.classification }}</p>
+    <p>Attack: {{ pokemon.attack }}</p>
+    <p>Back to <a href="/pokemons">Pokedex</a></p>
+{% endblock %}
